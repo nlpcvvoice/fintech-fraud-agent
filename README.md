@@ -29,7 +29,7 @@ call it as a step, then hand the DataFrame to the modeling pipeline.
     src/
       agent_tools.py      BigQuery data-fetch tool
       main.py             End-to-end pipeline: split -> XGBoost -> isotonic calibration -> metrics
-      train_xgb.ipynb     Interactive training + evaluation notebook
+      notebooks/train_xgb.ipynb   Interactive training + evaluation notebook
       models/
         fraud_xgb_model.json            Base XGBoost booster
         calibrated_fraud_model.pkl      Calibrated model wrapper (reusable asset)
