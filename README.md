@@ -54,6 +54,10 @@ call it as a step, then hand the DataFrame to the modeling pipeline.
 The run prints the raw and calibrated Brier scores and the production classification
 profile, then writes `src/models/calibrated_fraud_model.pkl`.
 
+> Note: `src/models/calibrated_fraud_model.pkl` is a generated, binary training artifact
+> (produced by the pipeline, not hand-maintained). Regenerate it by running the
+> notebook or the pipeline above; versioning it is optional.
+
 ## Notes
 
 - Stratified splits are mandatory for fraud data; the calibration split is isolated
